@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: linen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) /2);
+}
+
+.logo {
+    color: black;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: crimson;
+}
+
+.main {
+    background-color: linen;
+}
+
+.sub-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 0rem calc((100vw - 800px)/2);
+}
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0 2rem;
+}
+
+.col-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.col-left h3 {
+    color: rgb(163, 40, 40);
+    padding-bottom: 1rem;
+}
+
+.col-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: rgb(129, 77, 77);
+    font-weight: 700;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: crimson;
+    background-color: rgb(14, 14, 11);   ;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: rgb(177, 26, 26);
+    color: rgb(224, 213, 213);
+}
+
+.col-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.my-image {
+    width: 280px;
+    height: 320px;
+    padding: 10px;
+    border-radius: 50%;
+    /* transition: transform .5s ease-in-out; */
+}
+
+footer {
+    background-color: linen;
+    height: 20vh;
+    padding-left: 310px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer p{
+    font-size: 2rem;
+    color: rgb(14, 14, 14);
+    padding-bottom: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    transition-duration: 0.3s;
+    font-size: 2rem;
+    padding: 8px;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 90px;
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoGithub:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoTwitter:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoGithub:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-main {
+        grid-template-columns: 1fr;
+    }
+}    
+
+
+
